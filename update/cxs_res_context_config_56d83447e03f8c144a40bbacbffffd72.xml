@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_res_context_config">
+    <cxs_res_context_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <cxs_context_config display_value="Legal Department test">a9a83807e03f8c144a40bbacbffffdd1</cxs_context_config>
+        <cxs_search_res_config display_value="Questions">ea294d70c39102006f333b0ac3d3aefa</cxs_search_res_config>
+        <default_search>false</default_search>
+        <name>social</name>
+        <order>100</order>
+        <search_operator>IR_AND_OR_QUERY</search_operator>
+        <sys_class_name>cxs_res_context_config</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-03-31 08:44:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>56d83447e03f8c144a40bbacbffffd72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Legal Department test.Questions</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>cxs_res_context_config_56d83447e03f8c144a40bbacbffffd72</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-03-31 08:44:03</sys_updated_on>
+    </cxs_res_context_config>
+</record_update>

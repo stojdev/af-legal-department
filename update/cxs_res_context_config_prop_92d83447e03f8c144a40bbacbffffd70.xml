@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cxs_res_context_config_prop">
+    <cxs_res_context_config_prop action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <choices/>
+        <cxs_res_context_config display_value="catalog">9ad83447e03f8c144a40bbacbffffd6b</cxs_res_context_config>
+        <default_value>IR_AND_OR_QUERY</default_value>
+        <description>Instructs Zing how to interegate the search string. The value may only be one of the following: 'IR_AND_QUERY', 'IR_AND_OR_QUERY' or 'IR_OR_QUERY'</description>
+        <id>catalog_sr.search_operator</id>
+        <name>Search Operator</name>
+        <sys_class_name>cxs_res_context_config_prop</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-03-31 08:44:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>92d83447e03f8c144a40bbacbffffd70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search Operator</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>cxs_res_context_config_prop_92d83447e03f8c144a40bbacbffffd70</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-03-31 08:44:03</sys_updated_on>
+        <type>choice</type>
+        <value>IR_AND_OR_QUERY</value>
+    </cxs_res_context_config_prop>
+</record_update>
