@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rättsligt stöd">e525426da0d514544a40613f6acdfe69</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Innan ett systemstöd en handling kan gallras behöver en bevarande- och gallringsutredning genomföras. Detta för att information inte ska gallras på felaktiga grunder.<br />Vid beställning kommer ett formulär att skickas ut för ifyllnad. Bevarande- och gallringsutredning kommer att påbörjas först när formuläret är ifyllt och inskickat.<br /><strong>Ny- och vidareutveckling av systemstöd</strong><br />Bevarande- och gallringsutredningar av ny- eller vidareutveckling initieras oftast via säkerhetsresan. Har du beställt en laglighetsbedömning kommer en bevarande- och gallringsutredning att utföras automatiskt.<br /><strong>Avveckling av systemstöd</strong><br />Innan ett systemstöd kan avvecklas behöver en bevarande- och gallringsutredning genomföras. Detta för att information inte ska gallras på felaktiga grunder.<br /><strong>Övriga handlingar</strong><br />Beskriv vad du vill ha utrett, bifoga gärna en kopia på handlingen om det går samt utförlig beskrivning om i vilket sammanhang handlingen förekommer.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Conservation and consignment investigations</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=1cfaa7dbd407905c4a402cd64f7e8b43&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.setValue('state', '1');
+current.setValue('errand_type', producer.category.errand_type);
+current.setValue('x_arams_af_gen_err_errand_classification', 'legal');
+var gr = new GlideRecord('sys_user');
+gr.addQuery('sys_id', gs.getUserID());
+gr.query();
+if (gr.next()){
+
+var userphone = gr.getValue('phone');
+var firstname = gr.getValue('first_name');
+var lastname= gr.getValue('last_name');
+var subject = (firstname+' '+lastname);
+var useremail = gr.getValue('email');
+current.setValue('contact_person', gs.getUserID());
+current.setValue('email', useremail);
+current.setValue('phone_number', userphone);
+current.setValue('counterpart_type', 'ANSTALLD');
+current.setValue('subject', subject);
+}
+current.setValue('description', producer.description.getDisplayValue() +
+    '\n\n Systemstöd: ' + producer.system_support.getDisplayValue() +
+    '\n Kontaktperson (om annan än beställare): ' + producer.contactperson.getDisplayValue() +
+    '\n Önskemål om färdigställande (datum): ' + producer.requested_date.getDisplayValue()
+);
+
+
+/***DO NOT REMOVE OR MODIFY THIS SECTION!!! Automatically added by "Force population of record producer used" business rule. 
+Forces population of this record producer sys_id into the target record for reporting purposes.***/
+current.u_record_producer = "1cfaa7dbd407905c4a402cd64f7e8b43";]]></script>
+        <short_description>Order preservation and consignment investigation of system support or documents</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 05:53:50</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1cfaa7dbd407905c4a402cd64f7e8b43</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Bevarande- och gallringsutredningar</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_cat_item_producer_1cfaa7dbd407905c4a402cd64f7e8b43</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-17 14:15:21</sys_updated_on>
+        <table_name>x_arams_af_gen_err_af_generic_errands_table</table_name>
+        <template/>
+        <type>item</type>
+        <u_af_dwp_af_computer_type/>
+        <u_af_dwp_item_type/>
+        <u_catalog_item_group_approval/>
+        <u_dwp_show_quick_add>false</u_dwp_show_quick_add>
+        <u_package_name/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+        <x_arams_af_req_approval_group/>
+        <x_arams_af_req_approval_type/>
+        <x_arams_af_req_assignment_group/>
+        <x_arams_af_req_configuration_item/>
+        <x_arams_af_req_create_change>false</x_arams_af_req_create_change>
+        <x_arams_af_req_fulfillment_group/>
+        <x_arams_af_req_specific_users/>
+        <x_arams_af_req_specific_workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=1cfaa7dbd407905c4a402cd64f7e8b43"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>1cfaa7dbd407905c4a402cd64f7e8b43</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 06:05:33</sys_created_on>
+        <sys_id>fdbfa757d487905c4a402cd64f7e8be5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 06:05:33</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;Innan ett systemst&amp;ouml;d en handling kan gallras beh&amp;ouml;ver en bevarande- och gallringsutredning genomf&amp;ouml;ras. Detta f&amp;ouml;r att information inte ska gallras p&amp;aring; felaktiga grunder.&lt;br /&gt;Vid best&amp;auml;llning kommer ett formul&amp;auml;r att skickas ut f&amp;ouml;r ifyllnad. Bevarande- och gallringsutredning kommer att p&amp;aring;b&amp;ouml;rjas f&amp;ouml;rst n&amp;auml;r formul&amp;auml;ret &amp;auml;r ifyllt och inskickat.&lt;br /&gt;&lt;strong&gt;Ny- och vidareutveckling av systemst&amp;ouml;d&lt;/strong&gt;&lt;br /&gt;Bevarande- och gallringsutredningar av ny- eller vidareutveckling initieras oftast via s&amp;auml;kerhetsresan. Har du best&amp;auml;llt en laglighetsbed&amp;ouml;mning kommer en bevarande- och gallringsutredning att utf&amp;ouml;ras automatiskt.&lt;br /&gt;&lt;strong&gt;Avveckling av systemst&amp;ouml;d&lt;/strong&gt;&lt;br /&gt;Innan ett systemst&amp;ouml;d kan avvecklas beh&amp;ouml;ver en bevarande- och gallringsutredning genomf&amp;ouml;ras. Detta f&amp;ouml;r att information inte ska gallras p&amp;aring; felaktiga grunder.&lt;br /&gt;&lt;strong&gt;&amp;Ouml;vriga handlingar&lt;/strong&gt;&lt;br /&gt;Beskriv vad du vill ha utrett, bifoga g&amp;auml;rna en kopia p&amp;aring; handlingen om det g&amp;aring;r samt utf&amp;ouml;rlig beskrivning om i vilket sammanhang handlingen f&amp;ouml;rekommer.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>1cfaa7dbd407905c4a402cd64f7e8b43</documentkey>
+        <fieldname>name</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 06:05:33</sys_created_on>
+        <sys_id>21bfa757d487905c4a402cd64f7e8be0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 06:05:33</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Bevarande- och gallringsutredningar</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>1cfaa7dbd407905c4a402cd64f7e8b43</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 06:05:33</sys_created_on>
+        <sys_id>21bfa757d487905c4a402cd64f7e8be3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 06:05:33</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Beställ bevarande- och gallringsutredning av systemstöd eller handlingar</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=1cfaa7dbd407905c4a402cd64f7e8b43"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>price</field>
+        <id>1cfaa7dbd407905c4a402cd64f7e8b43</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 05:53:50</sys_created_on>
+        <sys_id>4a0d6753d447905c4a402cd64f7e8b8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 05:53:50</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>recurring_price</field>
+        <id>1cfaa7dbd407905c4a402cd64f7e8b43</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-10 05:53:50</sys_created_on>
+        <sys_id>0e0d6753d447905c4a402cd64f7e8b90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 05:53:50</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

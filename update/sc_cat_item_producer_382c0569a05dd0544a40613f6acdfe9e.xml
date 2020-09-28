@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rättsligt stöd">e525426da0d514544a40613f6acdfe69</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Here you can get help with accessing archived documents in our archive depot or from discontinued operating systems. When you place your order, it is important that you clearly describe what you are looking for and state information that we can search for. Examples of such information are:</p>
+<p>• social security number,</p>
+<p>• year</p>
+<p>• case number</p>
+<p>• diary number </p>
+<p>If there is a power of attorney or consent for disclosure, these must also be attached. If you order information at the request of someone else, e.g. a jobseeker or authority - choose extraditions externally, and we will ensure that the documents are received by the customer. If you order documents for your own account or for other internal use - choose disclosures internally. We will return with answers shortly.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Disclosure of public documents</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=382c0569a05dd0544a40613f6acdfe9e&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.setValue('state', '1');
+current.setValue('errand_type', producer.category.errand_type);
+current.setValue('x_arams_af_gen_err_errand_classification', 'consignment');
+var gr = new GlideRecord('sys_user');
+gr.addQuery('sys_id', gs.getUserID());
+gr.query();
+if (gr.next()) {
+
+    var userphone = gr.getValue('phone');
+    var firstname = gr.getValue('first_name');
+    var lastname = gr.getValue('last_name');
+    var subject = (firstname + ' ' + lastname);
+    var useremail = gr.getValue('email');
+    current.setValue('contact_person', gs.getUserID());
+    current.setValue('email', useremail);
+    current.setValue('phone_number', userphone);
+    current.setValue('counterpart_type', 'ANSTALLD');
+    current.setValue('subject', subject);
+}
+
+
+/***DO NOT REMOVE OR MODIFY THIS SECTION!!! Automatically added by "Force population of record producer used" business rule. 
+Forces population of this record producer sys_id into the target record for reporting purposes.***/
+current.u_record_producer = "382c0569a05dd0544a40613f6acdfe9e";]]></script>
+        <short_description>Help and support in matters of disclosure of public documents</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>382c0569a05dd0544a40613f6acdfe9e</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Disclosure of public documents</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_cat_item_producer_382c0569a05dd0544a40613f6acdfe9e</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-24 07:11:44</sys_updated_on>
+        <table_name>x_arams_af_gen_err_af_generic_errands_table</table_name>
+        <template/>
+        <type>item</type>
+        <u_af_dwp_af_computer_type/>
+        <u_af_dwp_item_type/>
+        <u_catalog_item_group_approval/>
+        <u_dwp_show_quick_add>false</u_dwp_show_quick_add>
+        <u_package_name/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+        <x_arams_af_req_approval_group/>
+        <x_arams_af_req_approval_type/>
+        <x_arams_af_req_assignment_group/>
+        <x_arams_af_req_configuration_item/>
+        <x_arams_af_req_create_change>false</x_arams_af_req_create_change>
+        <x_arams_af_req_fulfillment_group/>
+        <x_arams_af_req_specific_users/>
+        <x_arams_af_req_specific_workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=382c0569a05dd0544a40613f6acdfe9e"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>382c0569a05dd0544a40613f6acdfe9e</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_id>0e2d492da05dd0544a40613f6acdfebe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-24 07:08:51</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;H&amp;auml;r kan du f&amp;aring; hj&amp;auml;lp med att f&amp;aring; tillg&amp;aring;ng till arkiverade handlingar i v&amp;aring;r arkivdep&amp;aring; eller ur avst&amp;auml;llda verksamhetssystem.&lt;/p&gt;&#13;
+&lt;p&gt;N&amp;auml;r du g&amp;ouml;r din best&amp;auml;llning &amp;auml;r det viktigt att du tydligt beskriver vad du s&amp;ouml;ker samt anger uppgifter som vi kan s&amp;ouml;ka p&amp;aring;. &lt;br /&gt; Exempel p&amp;aring; s&amp;aring;dana uppgifter &amp;auml;r:&lt;/p&gt;&#13;
+&lt;ul style="list-style-position: inside;"&gt;&#13;
+&lt;li&gt;personnummer,&lt;/li&gt;&#13;
+&lt;li&gt;&amp;aring;rtal,&lt;/li&gt;&#13;
+&lt;li&gt;&amp;auml;rendenummer,&lt;/li&gt;&#13;
+&lt;li&gt;diarienummer etc.&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+&lt;p&gt;Finns fullmakt eller samtycke f&amp;ouml;r utl&amp;auml;mnande ska &amp;auml;ven dessa bifogas.&lt;/p&gt;&#13;
+&lt;p&gt;Om du best&amp;auml;ller uppgifter p&amp;aring; beg&amp;auml;ran av n&amp;aring;gon annan t.ex. en arbetss&amp;ouml;kande eller myndighet - v&amp;auml;lj utl&amp;auml;mnanden externa, s&amp;aring; ser vi till att handlingarna kommer best&amp;auml;llaren tillhanda. Om du best&amp;auml;ller handlingar f&amp;ouml;r egen r&amp;auml;kning eller f&amp;ouml;r annat internt bruk - v&amp;auml;lj utl&amp;auml;mnanden interna. Vi &amp;aring;terkommer med svar inom kort.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>382c0569a05dd0544a40613f6acdfe9e</documentkey>
+        <fieldname>name</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_id>4e2d492da05dd0544a40613f6acdfeb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:56:05</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Utlämnande av allmän handling</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>382c0569a05dd0544a40613f6acdfe9e</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_id>ce2d492da05dd0544a40613f6acdfebb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-17 14:22:29</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Hjälp och stöd i frågor om utlämnande av allmän handling</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=382c0569a05dd0544a40613f6acdfe9e"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>price</field>
+        <id>382c0569a05dd0544a40613f6acdfe9e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_id>022d492da05dd0544a40613f6acdfeb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:56:05</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>recurring_price</field>
+        <id>382c0569a05dd0544a40613f6acdfe9e</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:56:05</sys_created_on>
+        <sys_id>ca2d492da05dd0544a40613f6acdfeb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:56:05</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Disclosure of public documents">382c0569a05dd0544a40613f6acdfe9e</catalog_item>
+        <catalog_variable>IO:c918e139d45350dc4a402cd64f7e8b50</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-09-18 07:07:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e5aa814ad41314dc4a402cd64f7e8bfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>personal_number_not_counterpart</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_e5aa814ad41314dc4a402cd64f7e8bfb</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-18 07:07:51</sys_updated_on>
+        <table/>
+        <ui_policy display_value="AF GenErr show pers">890a05c6d41314dc4a402cd64f7e8b69</ui_policy>
+        <variable>personal_number_not_counterpart</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_arams_af_gen_err_af_generic_errands_table">category=da95055d60dd10581ad498dc6a504d74^ORcategory=7a86895d60dd10581ad498dc6a504db4^ORsub_category=442c8199601150581ad498dc6a504dfd^ORsub_category=93cb0159601150581ad498dc6a504d1a^ORcategory=03074911601150581ad498dc6a504d7e^ORsub_category=21cf8d51605150581ad498dc6a504d21^ORsub_category=0edfc951605150581ad498dc6a504dc4^ORsub_category=8155546bc931d4904a401206d1e3f4f8^ORcategory=5c553ca715475c9c1ad4f1bb4d2bd48d^EQ<item display_table="x_arams_af_gen_err_category" display_value="Avtal och upphandling" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="da95055d60dd10581ad498dc6a504d74"/>
+            <item display_table="x_arams_af_gen_err_category" display_value="Förvaltningsrätt" endquery="false" field="category" goto="false" newquery="false" operator="=" or="true" value="7a86895d60dd10581ad498dc6a504db4"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Kakor och policies" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="442c8199601150581ad498dc6a504dfd"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Informationssäkerhet" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="93cb0159601150581ad498dc6a504d1a"/>
+            <item display_table="x_arams_af_gen_err_category" display_value="Personuppgifter GDPR" endquery="false" field="category" goto="false" newquery="false" operator="=" or="true" value="03074911601150581ad498dc6a504d7e"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Ledningsfrågor" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="21cf8d51605150581ad498dc6a504d21"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Avtal och upphandling" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="0edfc951605150581ad498dc6a504dc4"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Övrigt, sekretess" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="8155546bc931d4904a401206d1e3f4f8"/>
+            <item display_table="x_arams_af_gen_err_category" display_value="IT-rätt" endquery="false" field="category" goto="false" newquery="false" operator="=" or="true" value="5c553ca715475c9c1ad4f1bb4d2bd48d"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="RA - Avtal, IT och förvaltningsrätt" name="RA - Avtal, IT och förvaltningsrätt">b8c2791879ec50104a4009d9e48d237e</group>
+        <match_conditions>ALL</match_conditions>
+        <name>AF GenErr - RA Avtal IT forvaltningsrätt</name>
+        <order>100</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-30 06:03:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a58b3c5c6db118104a40e6f0d733108d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AF GenErr - RA Avtal IT forvaltningsrätt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sysrule_assignment_a58b3c5c6db118104a40e6f0d733108d</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-25 14:23:30</sys_updated_on>
+        <table>x_arams_af_gen_err_af_generic_errands_table</table>
+        <user/>
+    </sysrule_assignment>
+</record_update>

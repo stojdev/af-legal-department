@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rättsligt stöd">e525426da0d514544a40613f6acdfe69</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Här kan du starta upp ett ärende för leverans av information från ett verksamhetssystem till myndighetens e-arkiv. <br />Här kan du också beställa leverans av ditt lokala närarkiv till myndighetens arkivdepå eller ställa dina frågor om e-arkiv och leveranser.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Deliveries to e-archive/archive</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture>3ea3f5e5a01514544a40613f6acdfe99</picture>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=89790de1a05dd0544a40613f6acdfed1&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.setValue('state', '1');
+current.setValue('errand_type', producer.category.errand_type);
+current.setValue('x_arams_af_gen_err_errand_classification', 'legal');
+var gr = new GlideRecord('sys_user');
+gr.addQuery('sys_id', gs.getUserID());
+gr.query();
+if (gr.next()){
+
+var userphone = gr.getValue('phone');
+var firstname = gr.getValue('first_name');
+var lastname= gr.getValue('last_name');
+var subject = (firstname+' '+lastname);
+var useremail = gr.getValue('email');
+current.setValue('contact_person', gs.getUserID());
+current.setValue('email', useremail);
+current.setValue('phone_number', userphone);
+current.setValue('counterpart_type', 'ANSTALLD');
+current.setValue('subject', subject);
+}
+current.setValue('description', producer.description.getDisplayValue() +
+    '\n\n Systemnamn: ' + producer.systemname.getDisplayValue() +
+    '\n Kontaktperson (om annan än beställare): ' + producer.contactperson_not_requester.getDisplayValue() +
+    '\n Önskemål om färdigställande (datum): ' + producer.delivery_time.getDisplayValue() + 
+		'\n Länkar till ytterligare information: ' + producer.links.getDisplayValue() +
+				'\n Mängd data i systemet (GB/Antal ärenden): ' + producer.amount_data.getDisplayValue());
+
+
+
+/***DO NOT REMOVE OR MODIFY THIS SECTION!!! Automatically added by "Force population of record producer used" business rule. 
+Forces population of this record producer sys_id into the target record for reporting purposes.***/
+current.u_record_producer = "89790de1a05dd0544a40613f6acdfed1";]]></script>
+        <short_description>Order deliveries of information to the authority archive</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>89790de1a05dd0544a40613f6acdfed1</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Leveranser till e-arkiv/arkiv</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_cat_item_producer_89790de1a05dd0544a40613f6acdfed1</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-17 14:15:52</sys_updated_on>
+        <table_name>x_arams_af_gen_err_af_generic_errands_table</table_name>
+        <template/>
+        <type>item</type>
+        <u_af_dwp_af_computer_type/>
+        <u_af_dwp_item_type/>
+        <u_catalog_item_group_approval/>
+        <u_dwp_show_quick_add>false</u_dwp_show_quick_add>
+        <u_package_name/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+        <x_arams_af_req_approval_group/>
+        <x_arams_af_req_approval_type/>
+        <x_arams_af_req_assignment_group/>
+        <x_arams_af_req_configuration_item/>
+        <x_arams_af_req_create_change>false</x_arams_af_req_create_change>
+        <x_arams_af_req_fulfillment_group/>
+        <x_arams_af_req_specific_users/>
+        <x_arams_af_req_specific_workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=89790de1a05dd0544a40613f6acdfed1"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>89790de1a05dd0544a40613f6acdfed1</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:15</sys_created_on>
+        <sys_id>b4c9c525a05dd0544a40613f6acdfecd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-07-10 05:01:39</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;H&amp;auml;r kan du ocks&amp;aring; best&amp;auml;lla leverans av ditt lokala n&amp;auml;rarkiv till myndighetens arkivdep&amp;aring; eller st&amp;auml;lla dina fr&amp;aring;gor om e-arkiv och leveranser.&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>89790de1a05dd0544a40613f6acdfed1</documentkey>
+        <fieldname>name</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:14</sys_created_on>
+        <sys_id>e4c941e1a05dd0544a40613f6acdfe6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:41:14</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Leveranser till e-arkiv/arkiv</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>89790de1a05dd0544a40613f6acdfed1</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:14</sys_created_on>
+        <sys_id>74c941e1a05dd0544a40613f6acdfe71</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-07-10 05:01:39</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Beställ leveranser av information till myndighetens arkiv</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=89790de1a05dd0544a40613f6acdfed1"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>price</field>
+        <id>89790de1a05dd0544a40613f6acdfed1</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:14</sys_created_on>
+        <sys_id>a8c941e1a05dd0544a40613f6acdfe6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:41:14</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>recurring_price</field>
+        <id>89790de1a05dd0544a40613f6acdfed1</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:41:14</sys_created_on>
+        <sys_id>74c941e1a05dd0544a40613f6acdfe6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:41:14</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>68acda90efdbafdc0c3e501f1eb8a73c16a66ae0227409f43204196bf9b00c69</hash>
+        <image_height>363</image_height>
+        <image_width>317</image_width>
+        <size_bytes>3830</size_bytes>
+        <size_compressed>2748</size_compressed>
+        <state>available</state>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:44:20</sys_created_on>
+        <sys_id>3ea3f5e5a01514544a40613f6acdfe99</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-09 10:44:20</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>89790de1a05dd0544a40613f6acdfed1</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="3ea3f5e5a01514544a40613f6acdfe99">3ea3f5e5a01514544a40613f6acdfe99</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:44:20</sys_created_on>
+        <sys_id>7ea3f5e5a01514544a40613f6acdfe99</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>3652</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="3ea3f5e5a01514544a40613f6acdfe99">3ea3f5e5a01514544a40613f6acdfe99</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:44:20</sys_created_on>
+        <sys_id>fea3f5e5a01514544a40613f6acdfe99</sys_id>
+    </sys_attachment_doc>
+</record_update>

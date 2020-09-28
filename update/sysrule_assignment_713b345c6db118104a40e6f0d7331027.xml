@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_arams_af_gen_err_af_generic_errands_table">sub_category=2a38c951601150581ad498dc6a504d34^ORsub_category=9aafc551605150581ad498dc6a504deb^EQ<item display_table="x_arams_af_gen_err_sub_category" display_value="Arbetssökande" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="false" value="2a38c951601150581ad498dc6a504d34"/>
+            <item display_table="x_arams_af_gen_err_sub_category" display_value="Arbetssökande" endquery="false" field="sub_category" goto="false" newquery="false" operator="=" or="true" value="9aafc551605150581ad498dc6a504deb"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="RA - Programjuridik" name="RA - Programjuridik">753af1d0792090104a4009d9e48d2334</group>
+        <match_conditions>ALL</match_conditions>
+        <name>AF GenErr - RA Programjuridik</name>
+        <order>50</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-30 05:58:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>713b345c6db118104a40e6f0d7331027</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AF GenErr - RA Programjuridik</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sysrule_assignment_713b345c6db118104a40e6f0d7331027</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-25 14:05:37</sys_updated_on>
+        <table>x_arams_af_gen_err_af_generic_errands_table</table>
+        <user/>
+    </sysrule_assignment>
+</record_update>

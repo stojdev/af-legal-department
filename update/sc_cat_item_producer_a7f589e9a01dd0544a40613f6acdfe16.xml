@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rättsligt stöd">e525426da0d514544a40613f6acdfe69</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Frågor om en tjänst ska upphandlas eller om en tjänst täcks in av en redan upphandlad tjänst ska till Inköpsavdelningen (länk till Inköpsavdelningens SSM)</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Contracts and procurement</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture>dad33de5a01514544a40613f6acdfe1b</picture>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=a7f589e9a01dd0544a40613f6acdfe16&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.setValue('state','1');
+current.setValue('errand_type', producer.category.errand_type);
+current.setValue('x_arams_af_gen_err_errand_classification','legal');
+var gr = new GlideRecord('sys_user');
+gr.addQuery('sys_id', gs.getUserID());
+gr.query();
+if (gr.next()){
+
+var userphone = gr.getValue('phone');
+var firstname = gr.getValue('first_name');
+var lastname= gr.getValue('last_name');
+var subject = (firstname+' '+lastname);
+var useremail = gr.getValue('email');
+current.setValue('contact_person', gs.getUserID());
+current.setValue('email', useremail);
+current.setValue('phone_number', userphone);
+current.setValue('counterpart_type', 'ANSTALLD');
+current.setValue('subject', subject);
+}
+/***DO NOT REMOVE OR MODIFY THIS SECTION!!! Automatically added by "Force population of record producer used" business rule. 
+Forces population of this record producer sys_id into the target record for reporting purposes.***/
+current.u_record_producer = "a7f589e9a01dd0544a40613f6acdfe16";]]></script>
+        <short_description>Legal questions regarding contracts and procurement</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a7f589e9a01dd0544a40613f6acdfe16</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Avtal och upphandling</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_cat_item_producer_a7f589e9a01dd0544a40613f6acdfe16</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-17 14:16:23</sys_updated_on>
+        <table_name>x_arams_af_gen_err_af_generic_errands_table</table_name>
+        <template/>
+        <type>item</type>
+        <u_af_dwp_af_computer_type/>
+        <u_af_dwp_item_type/>
+        <u_catalog_item_group_approval/>
+        <u_dwp_show_quick_add>false</u_dwp_show_quick_add>
+        <u_package_name/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+        <x_arams_af_req_approval_group/>
+        <x_arams_af_req_approval_type/>
+        <x_arams_af_req_assignment_group/>
+        <x_arams_af_req_configuration_item/>
+        <x_arams_af_req_create_change>false</x_arams_af_req_create_change>
+        <x_arams_af_req_fulfillment_group/>
+        <x_arams_af_req_specific_users/>
+        <x_arams_af_req_specific_workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=a7f589e9a01dd0544a40613f6acdfe16"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>a7f589e9a01dd0544a40613f6acdfe16</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_id>8b46852da01dd0544a40613f6acdfead</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 11:01:58</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;Fr&amp;aring;gor om en tj&amp;auml;nst ska upphandlas eller om en tj&amp;auml;nst t&amp;auml;cks in av en redan upphandlad tj&amp;auml;nst ska till &lt;a title="Ink&amp;ouml;psavdelningen" href="http://arssso.ams.se/sso/openwebcase.jsp?env=ars&amp;amp;id=17" target="_blank"&gt;Ink&amp;ouml;psavdelningen&lt;/a&gt;&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>a7f589e9a01dd0544a40613f6acdfe16</documentkey>
+        <fieldname>name</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_id>7646812da01dd0544a40613f6acdfe6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:26:06</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Avtal och upphandling</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>a7f589e9a01dd0544a40613f6acdfe16</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_id>8b46852da01dd0544a40613f6acdfeaa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 06:11:18</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Juridiska frågor inom avtalsrätt,  upphandling immaterialrätt och konkurrensrätt.</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=a7f589e9a01dd0544a40613f6acdfe16"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>price</field>
+        <id>a7f589e9a01dd0544a40613f6acdfe16</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_id>3a46812da01dd0544a40613f6acdfe6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:26:06</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>recurring_price</field>
+        <id>a7f589e9a01dd0544a40613f6acdfe16</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:26:06</sys_created_on>
+        <sys_id>f246812da01dd0544a40613f6acdfe6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:26:06</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>26b31e9cc6e44966792d6aadcc4f4e88d303f13b6c7badccabaa7f14aabc00ae</hash>
+        <image_height>422</image_height>
+        <image_width>340</image_width>
+        <size_bytes>3445</size_bytes>
+        <size_compressed>1729</size_compressed>
+        <state>available</state>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:45:07</sys_created_on>
+        <sys_id>dad33de5a01514544a40613f6acdfe1b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 10:45:07</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>a7f589e9a01dd0544a40613f6acdfe16</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="dad33de5a01514544a40613f6acdfe1b">dad33de5a01514544a40613f6acdfe1b</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:45:07</sys_created_on>
+        <sys_id>1ed33de5a01514544a40613f6acdfe1b</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2292</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="dad33de5a01514544a40613f6acdfe1b">dad33de5a01514544a40613f6acdfe1b</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:45:07</sys_created_on>
+        <sys_id>9ed33de5a01514544a40613f6acdfe1b</sys_id>
+    </sys_attachment_doc>
+</record_update>

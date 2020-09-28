@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rättsligt stöd">e525426da0d514544a40613f6acdfe69</category>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Här kan du ställa frågor kring rättsliga tolkningar av de arbetsmarknadspolitiska regelverken samt arbetsrätten.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>false</ignore_price>
+        <image/>
+        <list_price>0</list_price>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Labor Law</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>true</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <picture>7a23f525a01514544a40613f6acdfe69</picture>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=ce220961a01dd0544a40613f6acdfe1b&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <script><![CDATA[current.setValue('state','1');
+current.setValue('x_arams_af_gen_err_errand_classification','legal');
+current.setValue('errand_type', producer.category.errand_type);
+var gr = new GlideRecord('sys_user');
+gr.addQuery('sys_id', gs.getUserID());
+gr.query();
+if (gr.next()){
+
+var userphone = gr.getValue('phone');
+var firstname = gr.getValue('first_name');
+var lastname= gr.getValue('last_name');
+var subject = (firstname+' '+lastname);
+var useremail = gr.getValue('email');
+current.setValue('contact_person', gs.getUserID());
+current.setValue('email', useremail);
+current.setValue('phone_number', userphone);
+current.setValue('counterpart_type', 'ANSTALLD');
+current.setValue('subject', subject);
+}
+/***DO NOT REMOVE OR MODIFY THIS SECTION!!! Automatically added by "Force population of record producer used" business rule. 
+Forces population of this record producer sys_id into the target record for reporting purposes.***/
+current.u_record_producer = "ce220961a01dd0544a40613f6acdfe1b";]]></script>
+        <short_description>Questions regarding labor law to legal department</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ce220961a01dd0544a40613f6acdfe1b</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Arbetsmarknadsrätt</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_cat_item_producer_ce220961a01dd0544a40613f6acdfe1b</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-28 08:01:10</sys_updated_on>
+        <table_name>x_arams_af_gen_err_af_generic_errands_table</table_name>
+        <template/>
+        <type>item</type>
+        <u_af_dwp_af_computer_type/>
+        <u_af_dwp_item_type/>
+        <u_catalog_item_group_approval/>
+        <u_dwp_show_quick_add>false</u_dwp_show_quick_add>
+        <u_package_name/>
+        <use_sc_layout>false</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+        <x_arams_af_req_approval_group/>
+        <x_arams_af_req_approval_type/>
+        <x_arams_af_req_assignment_group/>
+        <x_arams_af_req_configuration_item/>
+        <x_arams_af_req_create_change>false</x_arams_af_req_create_change>
+        <x_arams_af_req_fulfillment_group/>
+        <x_arams_af_req_specific_users/>
+        <x_arams_af_req_specific_workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=ce220961a01dd0544a40613f6acdfe1b"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ce220961a01dd0544a40613f6acdfe1b</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:40</sys_created_on>
+        <sys_id>c69409e5a01dd0544a40613f6acdfe13</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-28 08:01:10</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>&lt;p&gt;H&amp;auml;r kan du st&amp;auml;lla fr&amp;aring;gor kring r&amp;auml;ttsliga tolkningar av de arbetsmarknadspolitiska regelverken&lt;/p&gt;</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ce220961a01dd0544a40613f6acdfe1b</documentkey>
+        <fieldname>name</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:40</sys_created_on>
+        <sys_id>b59405e5a01dd0544a40613f6acdfe10</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 06:10:34</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Arbetsmarknadsrätt</value>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>ce220961a01dd0544a40613f6acdfe1b</documentkey>
+        <fieldname>short_description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:40</sys_created_on>
+        <sys_id>c69409e5a01dd0544a40613f6acdfe10</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-10 10:59:06</sys_updated_on>
+        <tablename>sc_cat_item_producer</tablename>
+        <value>Frågor om arbetsmarknadsrätt till Rättsavdelningen</value>
+    </sys_translated_text>
+    <fx_price action="delete_multiple" query="id=ce220961a01dd0544a40613f6acdfe1b"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>price</field>
+        <id>ce220961a01dd0544a40613f6acdfe1b</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:39</sys_created_on>
+        <sys_id>799405e5a01dd0544a40613f6acdfe0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:18:39</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="SEK">SEK</currency>
+        <field>recurring_price</field>
+        <id>ce220961a01dd0544a40613f6acdfe1b</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="SEK">SEK</reference_currency>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 07:18:40</sys_created_on>
+        <sys_id>829409e5a01dd0544a40613f6acdfe0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 07:18:40</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>6f0294264d49460da532d9e442e2f22ac2a93c020ea1b6d1284ea9019fbbf8e3</hash>
+        <image_height>365</image_height>
+        <image_width>380</image_width>
+        <size_bytes>3105</size_bytes>
+        <size_compressed>854</size_compressed>
+        <state>available</state>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:42:10</sys_created_on>
+        <sys_id>7a23f525a01514544a40613f6acdfe69</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-09 10:42:11</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>ce220961a01dd0544a40613f6acdfe1b</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="7a23f525a01514544a40613f6acdfe69">7a23f525a01514544a40613f6acdfe69</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:42:10</sys_created_on>
+        <sys_id>ba23f525a01514544a40613f6acdfe69</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCWJgYKwB4lwONqAIS+7FL0CKsTjI3Ylh3TmZlyCxdEdfRwaGjf3cfxJZgXzOAo/IYgYGMVUQZvQMUvnAwMC9zdPFMaQi7u3djbmp4UKuF/kaFU9MOSkgwuX8gkfCqf2S4oUpmsHPzG+HcMgILDh4UdXA4fvqn6Gl15j6TvOL3Lurt38Pk4DjB0YnDjsHjoPsHIo/GBRZ5BVaHjC3CNQ0CDTxCzihSr4T+mP/78fjrx8/XrR7837//7r9fA69u1n+b79fV/3309Pu2hunT5/+XcqQxVE3mdMuwPfDbJ8PjVlN91Oa+EOE/6gJ1yyY9cB85gPmqyz7T7LIr1D74av2w8H0YL7RQfZVnDTUUlb6IX/7bNF38+v/Ve43OaMIFrH/zbs7L/++gY8yyMzNaj98VAYxA+jg+fPmvYn//eadvfXBdKWD+ZtWN59/eeq934eZHqAQeM1p9xLk4f3zHkz2G3oCwKS1fUft/3937d6U7d4b367V5L9rN4v8O8cPnuo/jgjUXOK0M2SZX9Lkz3NQfe4DYedRYeoKl3P+255/P27+/PlvD+dtv/27dIXSj8179naev+f16d6tn9rA+NGWvzdt7549e0CRY3/69uwfb76d/H31PTQK/+k01ft9mD7ymG9ePbC3s7u1/9uHDx9evq0vm//X7dc6lR/PWepPruP7l74/MWyvNuc/y4PxRge38+6e9GC+8B9V4ZrbG4aC4G6rH/n/z53/Vz3/7t/07zfvb2//vv69FMzbxbs+7f59tf34fzWwb0EZ+rzSSGS6sf1/fX39en9//2+J22+//WsVIvgn8t69I+n5qpX5b/+IlnPa3WkGFXadij+WCNckcQALwPkSTf5WB9XbRoWpKwwsqG6//fbrenz9zfa/Pz4+BkVGzaW7qj/C7fboVldWVu7nCwUVg8DmQrw/qAwE1rFfh6oAqFUALLHjqysqfnz5Zm8Maxj8v5l/o1S4Rk0I2Bz6EznIGaBCpv58FvtlUKuRY/C0GoFatgIbt9/v19fXVlRs4P/9+bz9/fXMAY/1DrI/+O9PQrsZIcmxfv1/xnvXnD3OTjIzBTbrGTxd/VzWOSU0AQDKVeIjIQwAAA==</data>
+        <length>1128</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="7a23f525a01514544a40613f6acdfe69">7a23f525a01514544a40613f6acdfe69</sys_attachment>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 10:42:10</sys_created_on>
+        <sys_id>3e23f525a01514544a40613f6acdfe69</sys_id>
+    </sys_attachment_doc>
+</record_update>

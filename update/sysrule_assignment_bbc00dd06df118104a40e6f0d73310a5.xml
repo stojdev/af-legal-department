@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
+    <sysrule_assignment action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_arams_af_gen_err_af_generic_errands_table">category=d34dc11d601150581ad498dc6a504ddf^ORcategory=b0f6cddd60dd10581ad498dc6a504d03^ORcategory.used_for_rp=1cfaa7dbd407905c4a402cd64f7e8b43^EQ<item display_table="x_arams_af_gen_err_category" display_value="Leverans till e-arkiv" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="d34dc11d601150581ad498dc6a504ddf"/>
+            <item display_table="x_arams_af_gen_err_category" display_value="Leverans till e-arkiv" endquery="false" field="category" goto="false" newquery="false" operator="=" or="true" value="b0f6cddd60dd10581ad498dc6a504d03"/>
+            <item display_table="sc_cat_item_producer" display_value="Conservation and consignment investigations" endquery="false" field="category.used_for_rp" goto="false" newquery="false" operator="=" or="true" value="1cfaa7dbd407905c4a402cd64f7e8b43"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <group display_value="RA - Regelverk och strategi" name="RA - Regelverk och strategi">32d9311c79ec50104a4009d9e48d23a9</group>
+        <match_conditions>ALL</match_conditions>
+        <name>AF GenErr - RA Regelverk och strategi</name>
+        <order>100</order>
+        <script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script>
+        <sys_class_name>sysrule_assignment</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-30 06:23:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>bbc00dd06df118104a40e6f0d73310a5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>AF GenErr - RA Regelverk och strategi</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sysrule_assignment_bbc00dd06df118104a40e6f0d73310a5</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-09-25 14:28:29</sys_updated_on>
+        <table>x_arams_af_gen_err_af_generic_errands_table</table>
+        <user/>
+    </sysrule_assignment>
+</record_update>

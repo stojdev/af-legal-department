@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_arams_af_gen_err_af_generic_errands_table</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_arams_af_gen_err_af_generic_errands_table">u_case_classification=legal^EQ<item display_value="Legal department" endquery="false" field="u_case_classification" goto="false" newquery="false" operator="=" or="false" value="legal"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Assignment Group default legal</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-04-23 07:48:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>30384b5ec09814504a400b3a104620cf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set Assignment Group default legal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sys_script_30384b5ec09814504a400b3a104620cf</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-05-05 07:27:42</sys_updated_on>
+        <template>assignment_group=1a43f51879ec50104a4009d9e48d23f7^EQ</template>
+        <when>before_display</when>
+    </sys_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</application>
+        <file_path/>
+        <instance_id>0a3a4f9edb0a6f409df22f17d49619af</instance_id>
+        <instance_name>serviceportal-dev</instance_name>
+        <name>sys_script_30384b5ec09814504a400b3a104620cf</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_arams_af_gen_err_af_generic_errands_table&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_arams_af_gen_err_af_generic_errands_table"&gt;u_case_classification=legal^EQ&lt;item display_value="Legal department" endquery="false" field="u_case_classification" goto="false" newquery="false" operator="=" or="false" value="legal"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set Assignment Group default legal&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;hugal&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-04-23 07:48:02&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;30384b5ec09814504a400b3a104620cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Assignment Group default legal&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="AF Legal Department" source="x_arams_legal_dep"&gt;80136c8fe0f78c144a40bbacbffffded&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="AF Legal Department"&gt;80136c8fe0f78c144a40bbacbffffded&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_30384b5ec09814504a400b3a104620cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;hugal&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-05-05 07:27:42&lt;/sys_updated_on&gt;&lt;template&gt;assignment_group=1a43f51879ec50104a4009d9e48d23f7^EQ&lt;/template&gt;&lt;when&gt;before_display&lt;/when&gt;&lt;/sys_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1831862755</payload_hash>
+        <record_name>Set Assignment Group default legal</record_name>
+        <reverted_from/>
+        <source>06a2f11879ec50104a4009d9e48d235a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-05-05 07:27:42</sys_created_on>
+        <sys_id>cd07fc96606890d04a405be7d03744e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171e3bbb8c50000001</sys_recorded_at>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-05-05 07:27:42</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>0507fc96686890d07ca05f59ebd847e7</update_guid>
+        <update_guid_history>0507fc96686890d07ca05f59ebd847e7:-1831862755,ad2570ded32890d036627a1c172858cf:-364724426,a1153052526890d06827fea70a379e87:-525901517,cae4bc9ef12890d023a2fb270f9cada1:-2045211959,65c4f89ec52890d06714d3729686176c:-228823168,1953785aeee09c10216fb22d491d6521:-1259038065,383b03ab90985010919a2931edc7bd76:221552095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-08-25 14:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>006cc0ce5a4d461384d6454350e99b61</sys_id>
+        <sys_metadata>30384b5ec09814504a400b3a104620cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Assignment Group default legal</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_parent display_value="Generella ärenden">fb9c1055a10bc45c4a4091156e2757b7</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_scope_delete display_value="">3b2aa47b5e9e4440ba65f0a0b3669000</sys_scope_delete>
+        <sys_update_name>sys_script_30384b5ec09814504a400b3a104620cf</sys_update_name>
+        <sys_update_version display_value="sys_script_30384b5ec09814504a400b3a104620cf">cd07fc96606890d04a405be7d03744e7</sys_update_version>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-08-25 14:27:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

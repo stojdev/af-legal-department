@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_category">
+    <sc_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <entitlement_script/>
+        <header_icon/>
+        <homepage_image/>
+        <homepage_renderer display_value="">Default</homepage_renderer>
+        <icon/>
+        <image/>
+        <location/>
+        <mobile_hide_description>false</mobile_hide_description>
+        <mobile_picture/>
+        <mobile_subcategory_render_type>list</mobile_subcategory_render_type>
+        <module/>
+        <order>0</order>
+        <parent/>
+        <roles/>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <show_in_cms>false</show_in_cms>
+        <sys_class_name>sc_category</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 12:01:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e525426da0d514544a40613f6acdfe69</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Rättsligt stöd</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>sc_category_e525426da0d514544a40613f6acdfe69</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 13:12:40</sys_updated_on>
+        <title>Rättsligt stöd</title>
+    </sc_category>
+    <sys_translated_text action="delete_multiple" query="documentkey=e525426da0d514544a40613f6acdfe69"/>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>e525426da0d514544a40613f6acdfe69</documentkey>
+        <fieldname>description</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 12:01:05</sys_created_on>
+        <sys_id>c3358ee9a0d514544a40613f6acdfe42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:01:05</sys_updated_on>
+        <tablename>sc_category</tablename>
+        <value/>
+    </sys_translated_text>
+    <sys_translated_text action="INSERT_OR_UPDATE">
+        <documentkey>e525426da0d514544a40613f6acdfe69</documentkey>
+        <fieldname>title</fieldname>
+        <language>sv</language>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-09 12:01:05</sys_created_on>
+        <sys_id>8f358ee9a0d514544a40613f6acdfe44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-06-09 12:01:05</sys_updated_on>
+        <tablename>sc_category</tablename>
+        <value>Rättsligt stöd</value>
+    </sys_translated_text>
+</record_update>

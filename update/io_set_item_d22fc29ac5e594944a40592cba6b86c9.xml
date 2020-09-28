@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>400</order>
+        <sc_cat_item display_value="Disclosure of public documents">382c0569a05dd0544a40613f6acdfe9e</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>hugal</sys_created_by>
+        <sys_created_on>2020-06-24 06:55:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d22fc29ac5e594944a40592cba6b86c9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AF Generic Errand Description.Disclosure of public documents</sys_name>
+        <sys_package display_value="AF Legal Department" source="x_arams_legal_dep">80136c8fe0f78c144a40bbacbffffded</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="AF Legal Department">80136c8fe0f78c144a40bbacbffffded</sys_scope>
+        <sys_update_name>io_set_item_d22fc29ac5e594944a40592cba6b86c9</sys_update_name>
+        <sys_updated_by>hugal</sys_updated_by>
+        <sys_updated_on>2020-08-20 11:33:27</sys_updated_on>
+        <variable_set display_value="AF Generic Errand Description">e56a02dec5a594944a40592cba6b8652</variable_set>
+    </io_set_item>
+</record_update>
